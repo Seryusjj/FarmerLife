@@ -25,7 +25,7 @@ public class Player : KinematicBody
 	Vector3 hdir = Vector3.Back;
 	float hspeed = 0;
 	float walkSpwed = 100;
-	float downSpwed = -9.8f;
+	// float downSpwed = -9.8f;
 
 
 

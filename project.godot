@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FarmerLife"
-run/main_scene="res://Spatial.tscn"
+run/main_scene="res://FloorMultimeshTest.tscn"
 config/icon="res://icon.png"
 
 [input]
@@ -59,5 +59,4 @@ rotate_start={
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 threads/thread_model=2
