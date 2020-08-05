@@ -56,9 +56,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\Floor.cs" />
-    <Compile Include="Scripts\MultiMeshFloor.cs" />
+    <Compile Include="Scripts\MultiMeshTerrain.cs" />
     <Compile Include="Scripts\Player.cs" />
     <Compile Include="Scripts\PlayerCamera.cs" />
+    <Compile Include="Scripts\TerrainArea.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

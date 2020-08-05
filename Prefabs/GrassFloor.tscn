@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assets/floor.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Material/GrassMaterial.tres" type="Material" id=3]
+[ext_resource path="res://Material/GrassMaterialSimpleWind.tres" type="Material" id=3]
 [ext_resource path="res://Assets/GrassLowRes.obj" type="ArrayMesh" id=4]
 [ext_resource path="res://Scripts/Floor.cs" type="Script" id=5]
 

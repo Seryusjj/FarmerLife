@@ -138,7 +138,6 @@ void light() {
 
 }
 "
-graph_offset = Vector2( -648, -232 )
 nodes/vertex/0/position = Vector2( 460, 240 )
 nodes/fragment/0/position = Vector2( 860, 60 )
 nodes/fragment/4/node = SubResource( 13 )
@@ -176,5 +175,5 @@ nodes/fragment/connections = PoolIntArray( 4, 0, 5, 0, 6, 0, 5, 1, 21, 0, 22, 0,
 [resource]
 shader = SubResource( 16 )
 shader_param/outlineColor = Color( 0.941176, 0.890196, 0.0980392, 1 )
-shader_param/textureColor = Color( 0.0627451, 0.32549, 0.0823529, 1 )
+shader_param/textureColor = Color( 0.0470588, 0.654902, 0.0901961, 1 )
 shader_param/TextureUniform = ExtResource( 1 )

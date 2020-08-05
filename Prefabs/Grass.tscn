@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/GrassLowRes.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Material/GrassMaterial.tres" type="Material" id=2]
+[ext_resource path="res://Material/GrassMaterialSimpleWind.tres" type="Material" id=2]
 
 [node name="Grass" type="MeshInstance"]
+material_override = ExtResource( 2 )
 use_in_baked_light = true
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 2 )

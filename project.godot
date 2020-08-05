@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FarmerLife"
-run/main_scene="res://FloorMultimeshTest.tscn"
+run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
 
 [input]
