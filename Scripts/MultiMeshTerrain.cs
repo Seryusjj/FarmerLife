@@ -28,7 +28,8 @@ public class MultiMeshTerrain : MultiMeshInstance
             UnselectInstance(_selected);
 
         _selected = instanceNum;
-        Multimesh.SetInstanceColor(instanceNum, new Color(.55f, .55f, .55f, .55f));
+        float selectionWidht = 0.55f;
+        Multimesh.SetInstanceColor(instanceNum, new Color(selectionWidht, selectionWidht, selectionWidht));
     }
 
     public void UnselectInstance(int instanceNum)
@@ -72,9 +73,6 @@ public class MultiMeshTerrain : MultiMeshInstance
         body.AddChild(collider);
         AddChild(body);
         collider.Translation = new Vector3(0, -0.19f, 0);
-
-
-
     }
 
 
@@ -82,22 +80,8 @@ public class MultiMeshTerrain : MultiMeshInstance
     {
         // we do not want to save the in run time changes to the material so just clone it
         MaterialOverride = MaterialOverride != null ? (Material)MaterialOverride.Duplicate(true) : MaterialOverride;
-        Multimesh = (MultiMesh) this.Multimesh.Duplicate(true);
+        Multimesh = (MultiMesh)this.Multimesh.Duplicate(true);
         // generate the terrain with colliders and events
         GenerateTerrain();
-
-        // add grass to the terrain  ? 
-        /*var matList = new SpatialMaterial[NumGrassLayers + 1];
-        // add grass layers
-        for (int i = 1; i < NumGrassLayers + 1; i++)
-        {
-            var mat = (SpatialMaterial)GrassLayersMaterial.Duplicate(true);            
-            mat.Uv1Scale = new Vector3(GrassTextureScale, GrassTextureScale, 1);
-            //mat.Uv1Offset = new Vector3(GrassGrow * i,0, 0);
-            mat.ParamsGrowAmount = GrassGrow * i;
-            matList[i] = mat;
-            mat.NextPass = matList[i - 1];
-        }
-        MaterialOverride.NextPass = matList[NumGrassLayers];*/
     }
 }

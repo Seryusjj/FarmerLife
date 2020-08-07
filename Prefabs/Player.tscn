@@ -8,7 +8,7 @@
 extents = Vector3( 0.001, 0.001, 0.001 )
 
 [sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0.368627, 0.0666667, 0.0666667, 1 )
+albedo_color = Color( 0.615686, 0.0431373, 0.0431373, 1 )
 metallic_specular = 0.0
 
 [sub_resource type="CapsuleShape" id=3]
@@ -24,7 +24,6 @@ transform = Transform( 0.978604, 0, 0, 0, 0.978604, 0, 0, 0, 0.978604, 0, 0.4404
 [node name="Armature" type="Spatial" parent="."]
 
 [node name="ElementSelector" type="Area" parent="Armature"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022617, 0.186765, 0.153391 )
 collision_mask = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="Armature/ElementSelector"]
@@ -35,11 +34,11 @@ mesh = ExtResource( 4 )
 material/0 = SubResource( 2 )
 
 [node name="Camera" type="InterpolatedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.996087, 0.0883766, 0, -0.0883766, 0.996087, 0, 0.532457, 1.03693 )
+transform = Transform( 1, 0, 0, 0, 0.974468, 0.224528, 0, -0.224528, 0.974468, 0, 0.797457, 1.5494 )
 fov = 85.6136
 script = ExtResource( 3 )
-height = 0.092
-distance = 1.041
+height = 0.357
+distance = 1.59
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 0.303, 0, 0, 0, -5.09942e-08, 0.247, 0, -0.313, -4.02414e-08, 0.00251532, 0.220176, -0.00434947 )

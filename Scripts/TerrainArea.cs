@@ -28,8 +28,7 @@ public class TerrainArea : Area
         SelectableTerrain = GetParent() as MultiMeshTerrain;
         this.CollisionLayer = 4; //areas -> layer 2 -> tag = 2²;
         this.CollisionMask = 0; //player > layer 1 -> tag = 2⁰;   
-        this.Connect("area_entered", this, nameof(OnAreaEnter));
-        
+        this.Connect("area_entered", this, nameof(OnAreaEnter));        
     }
 
     private void OnAreaEnter(Area area)

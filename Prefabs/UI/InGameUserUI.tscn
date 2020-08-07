@@ -1,0 +1,627 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/grass_bt.png" type="Texture" id=1]
+
+[node name="InGameUserUI" type="Control"]
+anchor_left = 0.000548065
+anchor_top = 0.000935389
+anchor_right = 1.00055
+anchor_bottom = 1.00094
+margin_left = 0.222717
+margin_right = 0.222656
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.351074
+anchor_top = 0.381667
+anchor_right = 0.648926
+anchor_bottom = 0.618333
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TabContainer" type="TabContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.471924
+margin_right = 0.471924
+tab_align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cultivos" type="ScrollContainer" parent="Panel/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel/TabContainer/Cultivos"]
+margin_right = 285.0
+margin_bottom = 404.0
+size_flags_horizontal = 3
+size_flags_vertical = 2
+columns = 4
+
+[node name="TextureButton12" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton13" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton14" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton15" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_right = 284.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton16" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_top = 68.0
+margin_right = 68.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton17" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_top = 68.0
+margin_right = 140.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton18" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_top = 68.0
+margin_right = 212.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton19" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_top = 68.0
+margin_right = 284.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton20" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_top = 136.0
+margin_right = 68.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton21" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_top = 136.0
+margin_right = 140.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton22" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_top = 136.0
+margin_right = 212.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton23" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_top = 136.0
+margin_right = 284.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton24" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_top = 204.0
+margin_right = 68.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton25" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_top = 204.0
+margin_right = 140.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton26" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_top = 204.0
+margin_right = 212.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton27" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_top = 204.0
+margin_right = 284.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton28" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_top = 272.0
+margin_right = 68.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton29" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_top = 272.0
+margin_right = 140.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton30" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_top = 272.0
+margin_right = 212.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton31" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_top = 272.0
+margin_right = 284.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton32" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_top = 340.0
+margin_right = 68.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton33" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 72.0
+margin_top = 340.0
+margin_right = 140.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton34" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 144.0
+margin_top = 340.0
+margin_right = 212.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton35" type="TextureButton" parent="Panel/TabContainer/Cultivos/GridContainer"]
+margin_left = 216.0
+margin_top = 340.0
+margin_right = 284.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="Edificios" type="ScrollContainer" parent="Panel/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel/TabContainer/Edificios"]
+margin_right = 285.0
+margin_bottom = 404.0
+size_flags_horizontal = 3
+size_flags_vertical = 2
+columns = 4
+
+[node name="TextureButton12" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton13" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton14" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton15" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_right = 284.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton16" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_top = 68.0
+margin_right = 68.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton17" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_top = 68.0
+margin_right = 140.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton18" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_top = 68.0
+margin_right = 212.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton19" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_top = 68.0
+margin_right = 284.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton20" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_top = 136.0
+margin_right = 68.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton21" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_top = 136.0
+margin_right = 140.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton22" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_top = 136.0
+margin_right = 212.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton23" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_top = 136.0
+margin_right = 284.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton24" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_top = 204.0
+margin_right = 68.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton25" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_top = 204.0
+margin_right = 140.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton26" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_top = 204.0
+margin_right = 212.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton27" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_top = 204.0
+margin_right = 284.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton28" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_top = 272.0
+margin_right = 68.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton29" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_top = 272.0
+margin_right = 140.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton30" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_top = 272.0
+margin_right = 212.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton31" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_top = 272.0
+margin_right = 284.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton32" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_top = 340.0
+margin_right = 68.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton33" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 72.0
+margin_top = 340.0
+margin_right = 140.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton34" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 144.0
+margin_top = 340.0
+margin_right = 212.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton35" type="TextureButton" parent="Panel/TabContainer/Edificios/GridContainer"]
+margin_left = 216.0
+margin_top = 340.0
+margin_right = 284.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 64, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
