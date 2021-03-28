@@ -8,9 +8,32 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "VisualShaderNodeCustom",
+"class": "CameraPositionWorldSpace",
+"language": "GDScript",
+"path": "res://Tools/ShaderNodes/camera_position_world_space.gd"
+}, {
+"base": "VisualShaderNodeCustom",
+"class": "PositionObjectSpace",
+"language": "GDScript",
+"path": "res://Tools/ShaderNodes/position_obj_space.gd"
+}, {
+"base": "VisualShaderNodeCustom",
+"class": "PositionObjectSpaceTransform",
+"language": "GDScript",
+"path": "res://Tools/ShaderNodes/position_obj_space_transform.gd"
+}, {
+"base": "VisualShaderNodeCustom",
+"class": "PositionWorldSpace",
+"language": "GDScript",
+"path": "res://Tools/ShaderNodes/position_world_space.gd"
+} ]
 _global_script_class_icons={
-
+"CameraPositionWorldSpace": "",
+"PositionObjectSpace": "",
+"PositionObjectSpaceTransform": "",
+"PositionWorldSpace": ""
 }
 
 [application]

@@ -34,10 +34,10 @@ mesh = ExtResource( 4 )
 material/0 = SubResource( 2 )
 
 [node name="Camera" type="InterpolatedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.974468, 0.224528, 0, -0.224528, 0.974468, 0, 0.797457, 1.5494 )
+transform = Transform( 1, 0, 0, 0, 0.964136, 0.265409, 0, -0.265409, 0.964136, 0, 0.862457, 1.53298 )
 fov = 85.6136
 script = ExtResource( 3 )
-height = 0.357
+height = 0.422
 distance = 1.59
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
