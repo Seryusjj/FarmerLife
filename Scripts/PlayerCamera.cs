@@ -4,6 +4,8 @@ using System;
 [Tool]
 public class PlayerCamera : InterpolatedCamera
 {
+	[Export]
+	ShaderMaterial Material { get; set; }
 
 	[Export]
 	float distance = 2;
@@ -15,7 +17,7 @@ public class PlayerCamera : InterpolatedCamera
 	Vector2? prevCoor;
 	static Vector3 GROUND_VECTOR = Vector3.Up;
 	Spatial lookAtTarget;
-	
+
 	public override void _Ready()
 	{
 		lookAtTarget = GetParent().GetNode<Spatial>("LookAt");
@@ -24,15 +26,30 @@ public class PlayerCamera : InterpolatedCamera
 
 	public override void _Process(float delta)
 	{
-		if (Engine.EditorHint) 
+		if (Engine.EditorHint)
 		{
 			RotateCameraAroundTarget(0, 0);
 		}
 	}
 
+	public void Process()
+	{
+		if (Material != null)
+		{
+			var translation = GlobalTransform.origin;
+			var translation1 = Transform.origin;
+
+			Material.SetShaderParam("PlayerGlobalPosition", translation);
+			//GD.Print(string.Format("PlayerGlobalPosition {0} {1} {2}", translation.x, translation.y, translation.z));
+			//GD.Print(string.Format("PlayerGlobalPosition1 {0} {1} {2}", translation1.x, translation1.y, translation1.z));
+		}
+	}
+
 	public override void _PhysicsProcess(float delta)
 	{
-		lookAtTarget = GetParent().GetNode<Spatial>("LookAt");
+		Process();
+
+		/*lookAtTarget = GetParent().GetNode<Spatial>("LookAt");
 		if (Input.IsActionPressed("rotate_start"))
 		{
 			// rotate start
@@ -52,7 +69,8 @@ public class PlayerCamera : InterpolatedCamera
 		else
 		{
 			prevCoor = null;
-		}
+		}*/
+		base._PhysicsProcess(delta);
 	}
 
 	void RotateCameraAroundTarget(float deltaX, float deltaY)

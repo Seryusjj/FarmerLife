@@ -79,8 +79,8 @@ public class MultiMeshTerrain : MultiMeshInstance
 	public override void _Ready()
 	{
 		// we do not want to save the in run time changes to the material so just clone it
-		MaterialOverride = MaterialOverride != null ? (Material)MaterialOverride.Duplicate(true) : MaterialOverride;
-		Multimesh = (MultiMesh)this.Multimesh.Duplicate(true);
+		//MaterialOverride = MaterialOverride != null ? (Material)MaterialOverride.Duplicate(true) : MaterialOverride;
+		//Multimesh = (MultiMesh)this.Multimesh.Duplicate(true);
 		// generate the terrain with colliders and events
 		GenerateTerrain();
 	}

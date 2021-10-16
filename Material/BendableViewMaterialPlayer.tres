@@ -1,5 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=25 format=2]
 
+[ext_resource path="res://Assets/PlayerColor.png" type="Texture" id=1]
+
 [sub_resource type="VisualShaderNodeTextureUniform" id=1]
 uniform_name = "TextureUniform"
 
@@ -402,14 +404,10 @@ nodes/fragment/4/node = SubResource( 3 )
 nodes/fragment/4/position = Vector2( 156.615, 411.5 )
 nodes/fragment/connections = PoolIntArray( 3, 0, 4, 0, 2, 0, 4, 1, 4, 0, 0, 0 )
 
-[sub_resource type="StreamTexture" id=24]
-flags = 23
-load_path = "res://.import/grass_terrain.png-ab3a8800bca67c173e7d3f5ed0293de6.s3tc.stex"
-
 [resource]
 shader = SubResource( 23 )
 shader_param/Enable = true
 shader_param/Curvature = 0.003
-shader_param/PlayerGlobalPosition = Vector3( -0.00767422, 0.855538, 1.12449 )
-shader_param/ColorUniform = Color( 0.215686, 0.482353, 0.176471, 1 )
-shader_param/TextureUniform = SubResource( 24 )
+shader_param/PlayerGlobalPosition = Vector3( 0, 0.862457, 1.12335 )
+shader_param/ColorUniform = Color( 0.905882, 0.866667, 0.866667, 1 )
+shader_param/TextureUniform = ExtResource( 1 )

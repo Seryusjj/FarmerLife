@@ -50,4 +50,5 @@ func _get_global_code(mode):
 
 func _get_code(input_vars, output_vars, mode, type):
 	# INV_CAMERA_MATRIX -> World space to view space transform.
-	return output_vars[0] + " = vec3(INV_CAMERA_MATRIX[0][3], INV_CAMERA_MATRIX[1][3], INV_CAMERA_MATRIX[2][3]);"
+	return output_vars[0] + " = (CAMERA_MATRIX * vec4(0.0, 0.0, 0.0, 1.0));"
+	 # " = vec3(INV_CAMERA_MATRIX[0][3], INV_CAMERA_MATRIX[1][3], INV_CAMERA_MATRIX[2][3]);"

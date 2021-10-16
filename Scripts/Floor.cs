@@ -29,6 +29,7 @@ public class Floor : MeshInstance
 		Selected = false;
 		TerrainMaterial = (ShaderMaterial)TerrainMaterial.Duplicate(true);
 		this.MaterialOverride = TerrainMaterial;
+		
 	}
 
 	private void CheckSelected()

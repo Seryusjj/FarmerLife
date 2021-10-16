@@ -7,14 +7,20 @@ public class Player : KinematicBody
 	static Vector3 GROUND_VECTOR = Vector3.Up;
 
 
+
 	Camera cam;
 
-	Spatial armature;
+	public Spatial Armature;
+	AnimationPlayer PlayerAnimator;
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		cam = GetNode<Camera>("Camera");
-		armature = GetNode<Spatial>("Armature");
+		Armature = GetNode<Spatial>("Armature");
+		PlayerAnimator = GetNode<AnimationPlayer>("Armature/Player_Model/AnimationPlayer");
+		if (PlayerAnimator == null)
+			GD.PrintErr("Not found");
 
 	}
 	// Horizontal velocity.
@@ -24,8 +30,11 @@ public class Player : KinematicBody
 
 	Vector3 hdir = Vector3.Back;
 	float hspeed = 0;
-	float walkSpwed = 100;
+	float walkSpwed = 50;
 	// float downSpwed = -9.8f;
+
+
+
 
 
 
@@ -58,7 +67,7 @@ public class Player : KinematicBody
 				if (yRot.HasValue)
 				{
 					//armature.Rotation.y
-					armature.RotateY(yRot.Value);
+					Armature.RotateY(yRot.Value);
 				}
 				hdir = dir;
 			}
@@ -73,10 +82,17 @@ public class Player : KinematicBody
 
 		linearVelocity = hv + Vector3.Up * vv;
 		linearVelocity = MoveAndSlide(linearVelocity, GROUND_VECTOR, true);
+		if (linearVelocity.Length() > 0.000f)
+			PlayerAnimator.Play("walk_blocking");
+		else 
+			PlayerAnimator.Play("idle_blocking");
+		
 
 		// check collisions, for now the mask is set to only floor 
 
 	}
+
+
 
 	public float? AdjustFacingRadian(Vector3 currentFacing, Vector3 targetFacing, Vector3 ground)
 	{

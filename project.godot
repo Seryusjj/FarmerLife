@@ -42,6 +42,15 @@ config/name="FarmerLife"
 run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/stdout/print_fps=true
+
+[global]
+
+antia=true
+aliasing=true
+
 [input]
 
 move_right={
